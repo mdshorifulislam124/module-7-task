@@ -16,6 +16,7 @@ body{
     justify-content: center; 
     align-items: center;
     text-align: center;  
+    margin: 120px 140px;
 }
 
 .box-container{
@@ -90,9 +91,68 @@ body{
     
 }
 
+
+
+/* card setion */
+
+.card-container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 120px 140px;
+    
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: 50%;
+    
+}
+
+.food{
+    border: 2px solid tomato;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+.food img{
+    width: 100%;
+}
+
+/* small device for reponsive */
+
+@media screen and (max-width: 576px) {
+    .card{
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        width: 100%;
+        
+    }
+
+    .food{
+        background-color: beige;
+        
+    }
+    
+}
+
+/* medium device for reponsive */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .box-section{
-        grid-template-columns: none;
+
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        width: 120%;
+    
+    }
+
+    .food{
+        background-color: #c5f3d6;
     }
 }
 
