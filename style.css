@@ -40,8 +40,9 @@ body{
 }
 
 .box-container-dwon{
-    display: block;
-    justify-content: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     border: 2px solid aqua;
     height: 10rem;
     width: 20rem;
@@ -61,7 +62,7 @@ body{
 
 .box-container-dwon p{
     height: 50px;
-    width: auto;
+    width: 250px;
 
 
 }
@@ -74,19 +75,39 @@ body{
     .box-container{
         
         flex-direction: column-reverse;
+        gap: 20px;
 
     }
 
     .box-container-up{
         background-color: rgb(160, 215, 240);
+        margin: 0;
+        min-height: 50vh;
+        align-items: center;
+        text-align: center;
     }
 
     .box-container-dwon{
         background-color: rgb(244, 245, 189);
+        margin: 0;
+        min-height: 50vh;
+        align-items: center;
+        text-align: center;
+        
     }
 
     .box{
         background-color: #f9eaea;
+    }
+
+    .box-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        min-height: 100vh;
     }
     
 }
@@ -137,6 +158,16 @@ body{
         background-color: beige;
         
     }
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        min-height: 100vh;
+    }
     
 }
 
@@ -153,6 +184,16 @@ body{
 
     .food{
         background-color: #c5f3d6;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        min-height: 100vh;
     }
 }
 
